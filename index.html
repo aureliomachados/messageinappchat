@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Messaging For In App</title>
+</head>
+<body>
+	<h1>Hello World!</h1>
+	<p>Messaging For In App</p>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D5f000006Ml16',
+				'Suppport_N1',
+				'https://prefeituradejenipapodeminas-dev-ed.my.site.com/ESWSuppportN11706651862942',
+				{
+					scrt2URL: 'https://prefeituradejenipapodeminas-dev-ed.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://prefeituradejenipapodeminas-dev-ed.my.site.com/ESWSuppportN11706651862942/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
+
